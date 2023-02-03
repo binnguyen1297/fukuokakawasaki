@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" thread-count="2" parallel="classes">
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+    <test name="suite test ">
+        <parameter name="environment" value="test">
+        </parameter>
+        <classes>
+            <class name="test.TC_01"/>
+            <class name="test.TC_02"/>
+            <!--            <class name="exercise.runtestcases.RemoveProductSuccessfully"/>-->
+        </classes>
+    </test>
+</suite>
